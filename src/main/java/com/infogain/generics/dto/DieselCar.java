@@ -51,7 +51,10 @@ public class DieselCar extends AutoMobile {
 
 	@Override
 	public String toString() {
-		return "DieselCar [tankCapacity=" + tankCapacity + "]";
+		return "DieselCar [tankCapacity=" + tankCapacity + ", EngineCapacity=" + getEngineCapacity()
+				+ ", Colour=" + getColour() + ", getRegeistration=" + getRegeistration() + "]";
 	}
+
+
 
 }

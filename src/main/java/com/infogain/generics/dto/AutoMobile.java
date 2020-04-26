@@ -49,11 +49,12 @@ public class AutoMobile extends Vehicle implements Serializable {
 		AutoMobile other = (AutoMobile) obj;
 		return engineCapacity == other.engineCapacity;
 	}
-	
 	@Override
 	public String toString() {
-		return "AutoMobile [engineCapacity=" + engineCapacity + "]";
+		return "AutoMobile [engineCapacity=" + engineCapacity + ", Colour=" + getColour() + ", Regeistration="
+				+ getRegeistration() + "]";
 	}
+	
 	
 	
 	

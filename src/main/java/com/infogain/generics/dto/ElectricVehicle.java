@@ -55,5 +55,10 @@ public class ElectricVehicle extends Vehicle implements Serializable,Comparable<
 	public int compareTo(ElectricVehicle o) {
 		return this.voltage-o.getVoltage();
 	}
+	@Override
+	public String toString() {
+		return "ElectricVehicle [voltage=" + voltage + ", Colour=" + getColour() + ", Regeistration="
+				+ getRegeistration() + "]";
+	}
 	
 }
