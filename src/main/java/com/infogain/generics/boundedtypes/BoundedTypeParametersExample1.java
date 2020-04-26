@@ -6,6 +6,7 @@ import com.infogain.generics.dto.AutoMobile;
 import com.infogain.generics.dto.DieselCar;
 import com.infogain.generics.dto.ElectricVehicle;
 import com.infogain.generics.dto.PetrolCar;
+import com.infogain.generics.dto.RegistrarOffice;
 import com.infogain.generics.dto.Vehicle;
 
 public class BoundedTypeParametersExample1 {
@@ -126,31 +127,3 @@ public static void main(String[] args) {
 	 
 }
 
-class RegistrarOffice<T extends Vehicle> {
-
-	T vehicle;
-
-	/**
-	 * @return the vehicle
-	 */
-	public T getVehicle() {
-		return vehicle;
-	}
-
-	/**
-	 * @param vehicle the vehicle to set
-	 */
-	public void setVehicle(T vehicle) {
-		this.vehicle = vehicle;
-	}
-
-	public RegistrarOffice(T vehicle) {
-		this.vehicle = vehicle;
-	}
-
-	@Override
-	public String toString() {
-		return "RegistrarOffice [vehicle=" + vehicle + "]";
-	}
-
-}
