@@ -3,12 +3,17 @@ package com.infogain.generics.dto;
 public class Mechanic<T> {
 
 	T vehicleCurrentlyRepairing;
-String name;
+	String name;
+
+	public Mechanic() {
+		// TODO Auto-generated constructor stub
+	}
+
 	/**
 	 * @param vehicleCurrentlyRepairing
 	 */
-	public Mechanic(String name,T vehicleCurrentlyRepairing) {
-		this.name=name;
+	public Mechanic(String name, T vehicleCurrentlyRepairing) {
+		this.name = name;
 		this.vehicleCurrentlyRepairing = vehicleCurrentlyRepairing;
 	}
 
@@ -39,5 +44,5 @@ String name;
 	public void setVehicleCurrentlyRepairing(T vehicleCurrentlyRepairing) {
 		this.vehicleCurrentlyRepairing = vehicleCurrentlyRepairing;
 	}
-	
+
 }
