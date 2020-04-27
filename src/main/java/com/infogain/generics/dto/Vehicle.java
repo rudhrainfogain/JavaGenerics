@@ -2,7 +2,7 @@ package com.infogain.generics.dto;
 
 import java.util.Objects;
 
-public class Vehicle{
+public class Vehicle implements Movable{
 	private String colour;
 	private String regeistration;
 	public Vehicle(String colour, String regeistration) {

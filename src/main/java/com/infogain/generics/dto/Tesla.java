@@ -1,6 +1,6 @@
 package com.infogain.generics.dto;
 
-public class Tesla extends ElectricVehicle{
+public class Tesla extends ElectricVehicle implements Movable{
 String manufacturer;
 
 /**

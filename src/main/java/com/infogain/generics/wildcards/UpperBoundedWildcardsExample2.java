@@ -24,7 +24,7 @@ public class UpperBoundedWildcardsExample2 {
 		//vehicleList.add(new Object());
 		
 	}
-	static void gPrint(List<? extends Number> l) {
+	static void print(List<? extends Number> l) {
 	    for (Number n : l) {
 	        System.out.println(n);
 	    }
